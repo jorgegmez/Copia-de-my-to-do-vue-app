@@ -25,7 +25,7 @@ export default {
     return {
       title: '',
       description: '',
-      tasks: {title: '', description: ''}
+      tasks: {title: '', description: '', done: false}
     }
   },
   methods:{
@@ -45,6 +45,7 @@ export default {
           title: newTask.title,
           description: newTask.description
         });
+        console.log(this.data);
         console.log('event', event);
       } catch (e) {
         console.log(e);

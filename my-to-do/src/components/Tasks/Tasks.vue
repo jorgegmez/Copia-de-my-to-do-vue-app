@@ -1,25 +1,27 @@
 <template>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Description</th>
-        <th>Status</th>
-        <th>Change Status</th>
-        <th>Delete</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="task in tasks" :key="task._id">
-        <td>{{task.title}}</td>
-        <td>{{task.description}}</td>
-        <td>{{task.done ? 'Completado' : 'Sin completar'}}</td>
-        <!-- <td><input type="checkbox" @click="handleChangeStatus(task)"></td> -->
-        <td><button @click="handleChangeStatus(task)" class="btn btn-sm btn-success">{{task.done ? 'Undo' : 'Mark as done'}}</button></td>
-        <td><button type="button" @click="handleDeleteTask(task._id)" class="btn btn-sm btn-danger">Remove</button></td>
-      </tr>
-    </tbody>
-  </table>
+  <div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>Change Status</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="task in tasks" :key="task._id">
+          <td>{{task.title}}</td>
+          <td>{{task.description}}</td>
+          <td>{{task.done ? 'Completado' : 'Sin completar'}}</td>
+          <!-- <td><input type="checkbox" @click="handleChangeStatus(task)"></td> -->
+          <td><button @click="handleChangeStatus(task)" class="btn btn-sm btn-success">{{task.done ? 'Undo' : 'Mark as done'}}</button></td>
+          <td><button type="button" @click="handleDeleteTask(task._id)" class="btn btn-sm btn-danger">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <script>
