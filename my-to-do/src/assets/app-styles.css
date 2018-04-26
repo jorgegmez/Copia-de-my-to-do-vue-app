@@ -1,0 +1,36 @@
+.AddTask-label{
+  padding: 0.5%;
+}
+
+.AddTask-form{
+  margin-top: 2em;
+}
+
+.AddTask-button{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.AddTask-container{
+  width: 60%;
+  margin: auto;
+}
+
+
+.form-div{
+  margin-top: 1.5em;
+}
+
+.btn-AddTask{
+  margin-top: 1.5em;
+  color: #fff;
+}
+
+.text-muted{
+  color: #ffb142;
+}
+
+.label-div{
+  float: left;
+  margin-bottom: 0.5em;
+}
